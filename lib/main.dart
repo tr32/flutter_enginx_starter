@@ -1,5 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_enginx_starter/provider/main_screen_notifier.dart';
+import 'package:flutter_enginx_starter/screens/main_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:logger/logger.dart';
@@ -42,8 +44,12 @@ class EnginxStarterApp extends StatelessWidget {
       title: 'StarterApp',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const MainScreen(),
+      routes: {
+        '/home': (context) => const HomeScreen(),
+      },
     );
   }
 }
