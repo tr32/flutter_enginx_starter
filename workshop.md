@@ -12,6 +12,9 @@
 ![alt text](/docs/archdiagram.png)
 
 Source: 
+- https://dart.dev/get-dart
+- https://dart.dev/tools
+- https://docs.flutter.dev/get-started/install
 - https://docs.flutter.dev/resources/architectural-overview
 - https://docs.flutter.dev/app-architecture
 
