@@ -30,8 +30,17 @@ dependencies:
   flutter_riverpod: ^2.6.1
   riverpod_annotation: ^2.6.1
 
-  # HTTP Requests
+  # HTTP Requests - preferred due to interceptors, refresh auth tokens, smart retry,  request cancellation, QUIC support,
+  # retrofit, supports http/1.1 and 2
+  dio: ^5.8.0+1
+
+  # HTTP Requests - for basic requests, common api for all platforms, default only support http/1.1
   http: ^1.4.0
+
+  flutter_secure_storage: ^9.2.4 # secure token storage
+  jwt_decoder: ^2.0.1
+
+  json_annotation: ^4.9.0
 
   # Local Storage (NoSQL key-value database)
   hive: ^2.2.3
@@ -67,6 +76,7 @@ dev_dependencies:
   flutter_lints: ^5.0.0
   hive_generator: ^2.0.0
   build_runner: ^2.5.4
+  json_serializable: ^6.10.0
   riverpod_generator: ^2.6.3
   riverpod_lint: ^2.6.3
   custom_lint: ^0.7.0
